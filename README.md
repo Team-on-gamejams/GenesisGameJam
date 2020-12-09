@@ -9,9 +9,9 @@ Available in [Windows, OSX, Linux and WebGL](link). If you encounter any problem
  * 
  
 # Team 
- * Team-on      [itch](https://teamon.itch.io/) [github](https://github.com/Team-on) - Unity developer
- * webandrover  [itch](https://webandrover.itch.io/) - game designer
- * ainarts      [itch](link) [artstation](https://www.artstation.com/ainarts) - 2d/UI artist
+ * Team-on [itch](https://teamon.itch.io/) [github](https://github.com/Team-on) - Unity developer
+ * webandrover [itch](https://webandrover.itch.io/) - game designer
+ * ainarts [itch](link) [artstation](https://www.artstation.com/ainarts) - 2d/UI artist
  
 # Used assets:
  * [asset_name](assetLink) - where used
