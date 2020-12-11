@@ -39,6 +39,7 @@ public class CircleSelectionHandler : MonoBehaviour {
 
 		cg.interactable = cg.blocksRaycasts = true;
 		menu.enabled = true;
+		GameManager.Instance.IsCanMoveCamereByClick = false;
 	}
 
 	public void Hide() {
@@ -58,6 +59,8 @@ public class CircleSelectionHandler : MonoBehaviour {
 			menu.isCanSelect = false;
 			menu.enabled = false;
 		}
+
+		GameManager.Instance.IsCanMoveCamereByClick = true;
 	}
 
 	public void OnSelect(int id) {

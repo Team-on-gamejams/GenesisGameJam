@@ -48,6 +48,10 @@ namespace UnityConstants
         /// ID of sorting layer 'Foreground'.
         /// </summary>
         public const int Foreground = 1569790775;
+        /// <summary>
+        /// ID of sorting layer 'WorldSpaceUI'.
+        /// </summary>
+        public const int WorldSpaceUI = -851117897;
     }
 
     public static class Layers
@@ -72,6 +76,10 @@ namespace UnityConstants
         /// Index of layer 'UI'.
         /// </summary>
         public const int UI = 5;
+        /// <summary>
+        /// Index of layer 'VisualOnly'.
+        /// </summary>
+        public const int VisualOnly = 8;
 
         /// <summary>
         /// Bitmask of layer 'Default'.
@@ -93,6 +101,10 @@ namespace UnityConstants
         /// Bitmask of layer 'UI'.
         /// </summary>
         public const int UIMask = 1 << 5;
+        /// <summary>
+        /// Bitmask of layer 'VisualOnly'.
+        /// </summary>
+        public const int VisualOnlyMask = 1 << 8;
     }
 
     public static class Scenes
@@ -102,9 +114,9 @@ namespace UnityConstants
         /// </summary>
         public const int MainMenu = 0;
         /// <summary>
-        /// ID of scene 'SampleScene2D'.
+        /// ID of scene 'MainScene'.
         /// </summary>
-        public const int SampleScene2D = 1;
+        public const int MainScene = 1;
     }
 
     public static class Axes
@@ -137,6 +149,46 @@ namespace UnityConstants
         /// Input axis 'Cancel'.
         /// </summary>
         public const string Cancel = "Cancel";
+        /// <summary>
+        /// Input axis 'Enable Debug Button 1'.
+        /// </summary>
+        public const string Enable_Debug_Button_1 = "Enable Debug Button 1";
+        /// <summary>
+        /// Input axis 'Enable Debug Button 2'.
+        /// </summary>
+        public const string Enable_Debug_Button_2 = "Enable Debug Button 2";
+        /// <summary>
+        /// Input axis 'Debug Reset'.
+        /// </summary>
+        public const string Debug_Reset = "Debug Reset";
+        /// <summary>
+        /// Input axis 'Debug Next'.
+        /// </summary>
+        public const string Debug_Next = "Debug Next";
+        /// <summary>
+        /// Input axis 'Debug Previous'.
+        /// </summary>
+        public const string Debug_Previous = "Debug Previous";
+        /// <summary>
+        /// Input axis 'Debug Validate'.
+        /// </summary>
+        public const string Debug_Validate = "Debug Validate";
+        /// <summary>
+        /// Input axis 'Debug Persistent'.
+        /// </summary>
+        public const string Debug_Persistent = "Debug Persistent";
+        /// <summary>
+        /// Input axis 'Debug Multiplier'.
+        /// </summary>
+        public const string Debug_Multiplier = "Debug Multiplier";
+        /// <summary>
+        /// Input axis 'Debug Horizontal'.
+        /// </summary>
+        public const string Debug_Horizontal = "Debug Horizontal";
+        /// <summary>
+        /// Input axis 'Debug Vertical'.
+        /// </summary>
+        public const string Debug_Vertical = "Debug Vertical";
     }
 }
 
