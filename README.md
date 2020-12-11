@@ -8,6 +8,11 @@ Available in [Windows, OSX, Linux and WebGL](link). If you encounter any problem
 # How to play:
  * 
  
+# How to open project:
+ * Download _Unity 2020.1.15_
+ * Download this project via git client. We use LFS, so download as archive would miss some files.
+ * Open project as always
+ 
 # Team 
  * Team-on [itch](https://teamon.itch.io/) [github](https://github.com/Team-on) - Unity developer
  * webandrover [itch](https://webandrover.itch.io/) - game designer
