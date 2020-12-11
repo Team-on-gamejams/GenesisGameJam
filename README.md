@@ -19,7 +19,7 @@ Available in [Windows, OSX, Linux and WebGL](link). If you encounter any problem
  * ainarts [itch](link) [artstation](https://www.artstation.com/ainarts) - 2d/UI artist
  
 # Used assets:
- * [asset_name](assetLink) - where used
+ * [Radial Menu Framework](https://assetstore.unity.com/packages/tools/gui/radial-menu-framework-50601) - radial menus
 
 # Screenshots
 ![Screen1](Screenshots/1.jpg)
