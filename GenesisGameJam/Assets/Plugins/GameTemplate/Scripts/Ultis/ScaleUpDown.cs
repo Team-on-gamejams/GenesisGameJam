@@ -2,8 +2,6 @@
 
 public class ScaleUpDown : MonoBehaviour {
 	[Header("Params")]
-	[SerializeField] bool startFromRandom = true;
-	[Space] 
 	[SerializeField] float minScale = 0.75f;
 	[SerializeField] float maxScale = 1.0f;
 	[SerializeField] float maxTime = 0.5f;
@@ -12,16 +10,9 @@ public class ScaleUpDown : MonoBehaviour {
 	bool isIncreaseScale = false;
 
 	void OnEnable() {
-		if (startFromRandom) {
-			isIncreaseScale = Random.Range(0, 2) == 1;
-			currTime = Random.Range(0, maxTime);
-		}
+		currTime = Mathf.InverseLerp(minScale, maxScale, gameObject.transform.localScale.x);
 
 		gameObject.transform.localScale = Vector3.one * Mathf.SmoothStep(minScale, maxScale, currTime / maxTime);
-	}
-
-	void OnDisable() {
-		gameObject.transform.localScale = Vector3.one;
 	}
 
 	void Update() {

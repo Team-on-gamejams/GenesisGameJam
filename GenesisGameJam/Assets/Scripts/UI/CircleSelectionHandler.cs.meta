@@ -1,17 +1,10 @@
 fileFormatVersion: 2
-guid: 596c16ceda382094bb544ea45272cec7
-labels:
-- Ui
-- Radial
-- Menu
-- Pie
-- Circular
-- Selection
+guid: 8549ca3630e677e4591e51c93aaedc05
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
-  executionOrder: -10
+  executionOrder: 0
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 

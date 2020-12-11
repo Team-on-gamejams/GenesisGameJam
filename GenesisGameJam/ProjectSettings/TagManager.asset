@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - VisualOnly
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1569790775
+    locked: 0
+  - name: WorldSpaceUI
+    uniqueID: 3443849399
     locked: 0

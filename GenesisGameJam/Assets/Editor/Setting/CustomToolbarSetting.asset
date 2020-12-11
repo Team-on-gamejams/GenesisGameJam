@@ -86,13 +86,13 @@ MonoBehaviour:
       type: {class: ToolbarTimeslider, ns: , asm: CustomToolbar.Editor}
       data:
         IsEnabled: 1
-        WidthInToolbar: 200
+        WidthInToolbar: 300
         minTime: 0
-        maxTime: 10
+        maxTime: 2
     0000000B:
       type: {class: ToolbarFPSSlider, ns: , asm: CustomToolbar.Editor}
       data:
-        IsEnabled: 1
+        IsEnabled: 0
         WidthInToolbar: 200
         minFPS: 1
         maxFPS: 120
