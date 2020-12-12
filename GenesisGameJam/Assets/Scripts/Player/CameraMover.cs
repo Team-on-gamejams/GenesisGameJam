@@ -16,29 +16,14 @@ public class CameraMover : MonoBehaviour {
 	Vector2 lastMoveValueDrag;
 	bool isMouseDown = false;
 
-	float aspect;
-	float mouseSens;
-
-	private void Start() {
-		float screenWidth = Screen.width;
-		float screenHeight = Screen.height;
-
-		float calcWidth = screenWidth * (screenHeight / scaler.referenceResolution.y);
-		float calcHeight = screenHeight * (screenWidth / scaler.referenceResolution.x);
-
-		if (calcWidth >= screenWidth) {
-			aspect = screenHeight / scaler.referenceResolution.y;
-		}
-		else {
-			aspect = screenWidth / scaler.referenceResolution.x;
-		}
-
-		mouseSens = mouseMapSensitivity / aspect;
-	}
-
 	void LateUpdate() {
 		if (isMouseDown && GameManager.Instance.IsCanMoveCamereByClick) {
-			transform.position += (Vector3)lastMoveValueDrag * mouseMapSensitivity / aspect;
+			Vector2 mouseDelta = Mouse.current.delta.ReadValue();
+			Vector2 delta =
+				TemplateGameManager.Instance.Camera.ScreenToWorldPoint(Vector3.zero).SetZ(0.0f) -
+				TemplateGameManager.Instance.Camera.ScreenToWorldPoint(mouseDelta).SetZ(0.0f);
+			Debug.Log($"{delta} {mouseDelta} {Mouse.current.position.ReadValue()}");
+			transform.position += (Vector3)delta;
 		}
 		else {
 			transform.position += (Vector3)lastMoveValueWASD * keyboardMapSensitivity * Time.deltaTime;
@@ -49,8 +34,9 @@ public class CameraMover : MonoBehaviour {
 }
 
 	public void OnMouseDrag(InputAction.CallbackContext context) {
-		if (isMouseDown)
-			lastMoveValueDrag = context.ReadValue<Vector2>();
+		if (isMouseDown && context.performed) {
+			
+		}
 	}
 
 	public void OnWASDMove(InputAction.CallbackContext context) {
