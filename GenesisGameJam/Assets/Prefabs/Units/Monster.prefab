@@ -560,7 +560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2554488266646873561}
-  - component: {fileID: 2554488266646873542}
+  - component: {fileID: 1464277448700591056}
   - component: {fileID: 2554488266646873543}
   m_Layer: 8
   m_Name: Monster
@@ -586,32 +586,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2554488266646873542
-BoxCollider2D:
+--- !u!114 &1464277448700591056
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2554488266646873562}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.0336214}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.86, y: 0.78}
-    newSize: {x: 7.95, y: 5.67}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.1490842, y: 2.0672429}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1cd14ecc8afda4cbf04517ddb210e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  rendererParent: {fileID: 4089352282907480368}
+  health: {fileID: 0}
+  rangeAttacker: {fileID: 0}
 --- !u!50 &2554488266646873543
 Rigidbody2D:
   serializedVersion: 4

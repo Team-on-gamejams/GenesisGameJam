@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 	public int this[ResourceType type] {
@@ -68,6 +69,47 @@ public class Player : MonoBehaviour {
 		buildings.Remove(b);
 	}
 
+	public int GetBuildingCount() => buildings.Count;
+
+	public Health GetNearestTargetForEnemy(Vector3 position) {
+		int nearestUnit = -1;
+		int nearestBuilding = -1;
+		float nearestUnitDist = -1;
+		float nearestBuildingDist = -1;
+
+		float thisDist;
+
+		for (int i = 0; i < buildings.Count; ++i) {
+			thisDist = (buildings[i].transform.position - position).magnitude;
+			if (nearestBuilding == -1 || thisDist < nearestBuildingDist) {
+				nearestBuilding = i;
+				nearestBuildingDist = thisDist;
+			}
+		}
+
+		for (int i = 0; i < units.Count; ++i) {
+			thisDist = (units[i].transform.position - position).magnitude;
+			if (nearestUnit == -1 || thisDist < nearestUnitDist) {
+				nearestUnit = i;
+				nearestUnitDist = thisDist;
+			}
+		}
+
+		if(nearestBuilding != -1 && nearestUnit != -1) {
+			if(nearestUnitDist < nearestBuildingDist) 
+				return units[nearestUnit].health;
+			return buildings[nearestBuilding].health;
+		}
+
+		if (nearestBuilding != -1)
+			return buildings[nearestBuilding].health;
+
+		if (nearestUnit != -1)
+			return units[nearestUnit].health;
+
+		return null;
+	}
+
 	public void Cheat_SkipMinute() {
 		float skippedSeconds = 30.0f;
 
@@ -76,5 +118,12 @@ public class Player : MonoBehaviour {
 				b.resourceCreator.Chear_SkipSeconds(skippedSeconds);
 			}
 		}
+
+		GameManager.Instance.enemiesSpawner.Chear_SkipSeconds(skippedSeconds);
+	}
+
+	public void Cheat_RestartGameClear() {
+		Scene scene = SceneManager.GetActiveScene();
+		SceneManager.LoadScene(scene.name);
 	}
 }

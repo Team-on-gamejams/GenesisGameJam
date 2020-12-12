@@ -1405,9 +1405,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesPerTree: {x: 1, y: 2}
-  secondsBetweenAttacks: 600
+  secondsBetweenAttacks: 360
+  secondsToShowWarning: 60
   mapBorder: {fileID: 471920118}
   enemyPrefab: {fileID: 2554488266646873562, guid: 71b4534a9749c1a419107b54d06506a3,
+    type: 3}
+  attackWarningPrefab: {fileID: 3732080641772373891, guid: 60cfdd1257029694bad0ffd9b88b21c1,
     type: 3}
   aliveEnemies: []
 --- !u!4 &334930449
