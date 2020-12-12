@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaler: {fileID: 398123043}
-  keyboardMapSensitivity: 0.05
+  keyboardMapSensitivity: 10
   mouseMapSensitivity: -0.0117225
 --- !u!4 &57340551
 Transform:

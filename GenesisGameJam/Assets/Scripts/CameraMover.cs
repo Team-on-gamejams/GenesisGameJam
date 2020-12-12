@@ -40,7 +40,7 @@ public class CameraMover : MonoBehaviour {
 			transform.position += (Vector3)lastMoveValueDrag * mouseMapSensitivity / aspect;
 		}
 		else {
-			transform.position += (Vector3)lastMoveValueWASD * keyboardMapSensitivity;
+			transform.position += (Vector3)lastMoveValueWASD * keyboardMapSensitivity * Time.deltaTime;
 		}
 	}
 
