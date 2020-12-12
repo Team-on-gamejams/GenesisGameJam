@@ -12,7 +12,6 @@ public class Unit : MonoBehaviour {
 
 	[NaughtyAttributes.ReadOnly] public Health health;
 	[NaughtyAttributes.ReadOnly] public RangeAttacker rangeAttacker;
-	[NaughtyAttributes.ReadOnly] public ResourceCreator resourceCreator;
 
 	Vector2 clickPos = Vector2.zero;
 
@@ -21,7 +20,6 @@ public class Unit : MonoBehaviour {
 
 		health = GetComponentInChildren<Health>();
 		rangeAttacker = GetComponentInChildren<RangeAttacker>();
-		resourceCreator = GetComponentInChildren<ResourceCreator>();
 	}
 
 	private void Start() {

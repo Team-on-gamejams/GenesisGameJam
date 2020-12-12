@@ -41,8 +41,10 @@ public class ResourceUI : MonoBehaviour {
 			img.sprite = image.sprite;
 			Color c = img.color;
 			c.a = 0.0f;
+			img.preserveAspect = true;
 			img.color = c;
 			img.SetNativeSize();
+			img.rectTransform.sizeDelta = img.rectTransform.sizeDelta.SetX(160.68f);
 
 			meatgo.transform.position = TemplateGameManager.Instance.Camera.WorldToScreenPoint(worldPos + (Vector3)Random.insideUnitCircle);
 			meatgo.transform.localEulerAngles = new Vector3(0, 0, Random.Range(0, 360f));

@@ -22,7 +22,6 @@ public class CameraMover : MonoBehaviour {
 			Vector2 delta =
 				TemplateGameManager.Instance.Camera.ScreenToWorldPoint(Vector3.zero).SetZ(0.0f) -
 				TemplateGameManager.Instance.Camera.ScreenToWorldPoint(mouseDelta).SetZ(0.0f);
-			Debug.Log($"{delta} {mouseDelta} {Mouse.current.position.ReadValue()}");
 			transform.position += (Vector3)delta;
 		}
 		else {
