@@ -45,16 +45,4 @@ public class Player : MonoBehaviour {
 	public void CollectResource(ResourceType type, int delta, Vector3 dropWorldPos) {
 		resourceUIs[(int)type].DropWithFlyingParticles(delta, dropWorldPos);
 	}
-
-	[NaughtyAttributes.Button]
-	public void Add() {
-		this[ResourceType.Time] += 5;
-		this[ResourceType.Sunlight] += 55;
-		this[ResourceType.Water] += 500;
-	}
-
-	[NaughtyAttributes.Button]
-	public void Add2() {
-		CollectResource(ResourceType.Sunlight, 55, transform.position);
-	}
 }
