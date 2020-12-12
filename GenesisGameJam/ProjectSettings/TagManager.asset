@@ -41,11 +41,14 @@ TagManager:
   - name: Background
     uniqueID: 2956155201
     locked: 0
+  - name: BackgroundProps
+    uniqueID: 2742872901
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Foreground
-    uniqueID: 1569790775
+  - name: Projectiles
+    uniqueID: 2150231607
     locked: 0
   - name: WorldSpaceUI
     uniqueID: 3443849399
