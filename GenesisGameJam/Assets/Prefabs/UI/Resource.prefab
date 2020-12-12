@@ -300,4 +300,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  counterSound: {fileID: 8300000, guid: 3ccb576fb507f984eb1ea1f72141d387, type: 3}
   textField: {fileID: 7264476678215434351}
+  image: {fileID: 7264476677559541124}

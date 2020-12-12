@@ -15,6 +15,8 @@ public class Player : MonoBehaviour {
 	[NonSerialized] public int[] resources;
 	public Action<ResourceType, int> onResourceChange;
 
+	[Header("Refs"), Space]
+	[SerializeReference] ResourceUI[] resourceUIs;
 
 	[Header("Start data"), Space]
 	[SerializeField] int startTime = 10;
@@ -40,10 +42,19 @@ public class Player : MonoBehaviour {
 		GameManager.Instance.IsCanMoveCamereByClick = false;
 	}
 
+	public void CollectResource(ResourceType type, int delta, Vector3 dropWorldPos) {
+		resourceUIs[(int)type].DropWithFlyingParticles(delta, dropWorldPos);
+	}
+
 	[NaughtyAttributes.Button]
 	public void Add() {
 		this[ResourceType.Time] += 5;
 		this[ResourceType.Sunlight] += 55;
 		this[ResourceType.Water] += 500;
+	}
+
+	[NaughtyAttributes.Button]
+	public void Add2() {
+		CollectResource(ResourceType.Sunlight, 55, transform.position);
 	}
 }
