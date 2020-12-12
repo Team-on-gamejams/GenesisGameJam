@@ -48,13 +48,13 @@ public class EnemyAI : MonoBehaviour {
 			target = GameManager.Instance.player.GetNearestTargetForEnemy(transform.position);
 		}
 		else if((target.transform.position - transform.position).magnitude >= 2.0f) {
-			MoveTo(target.transform.position + (Vector3)Random.insideUnitCircle.normalized * Random.Range(1, 2));
+			MoveTo(target.transform.position + (Vector3)Random.insideUnitCircle.normalized * Random.Range(1, 3));
 		}
 	}
 
 	public void SetTarget(Health h) {
 		target = h;
-		MoveTo(target.transform.position + (Vector3)Random.insideUnitCircle.normalized * Random.Range(1, 2));
+		MoveTo(target.transform.position + (Vector3)Random.insideUnitCircle.normalized * Random.Range(1, 3));
 	}
 
 	void MoveTo(Vector2 worldPos) {

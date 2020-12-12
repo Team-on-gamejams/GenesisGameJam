@@ -46,8 +46,10 @@ public class Unit : MonoBehaviour {
 		if(clickPos != Vector2.zero) {
 			Vector2 moveVector = clickPos - (Vector2)transform.position;
 			float moveVal = speed * Time.deltaTime;
-			if (moveVector.magnitude < moveVal)
+			if (moveVector.magnitude < moveVal) {
 				moveVal = moveVector.magnitude;
+				clickPos = Vector2.zero;
+			}
 			transform.position += (Vector3)moveVector.normalized * moveVal;
 		}
 	}
