@@ -11,12 +11,20 @@ using Random = UnityEngine.Random;
 
 [CreateAssetMenu(fileName = "GameManager", menuName = "Singletons/GameManager")]
 public class GameManager : Singleton<GameManager> {
-	[ReadOnly] public bool IsCanMoveCamereByClick = true;
+	[ReadOnly] public bool IsCanMoveCamereByClick = false;
 
 	[ReadOnly] public Player player;
 
 	protected override void Initialize() {
+		Debug.Log("GameManager.Initialize()");
 		base.Initialize();
+
+		StartCoroutine(DelayedSetup());
+
+		IEnumerator DelayedSetup() {
+			yield return null;
+			yield return null;
+		}
 	}
 
 	protected override void Deinitialize() {
