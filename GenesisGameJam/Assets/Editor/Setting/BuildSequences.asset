@@ -15,7 +15,7 @@ MonoBehaviour:
   sequences:
   - isEnabled: 1
     editorName: Testing
-    itchGameLink: teamon/GameTemplate
+    itchGameLink: teamon/tree-of-eternity
     scriptingDefineSymbolsOverride: 
     builds:
     - isEnabled: 1
@@ -152,7 +152,7 @@ MonoBehaviour:
       needGoogleDrivePush: 0
   - isEnabled: 1
     editorName: Testing + zip
-    itchGameLink: teamon/GameTemplate
+    itchGameLink: teamon/tree-of-eternity
     scriptingDefineSymbolsOverride: 
     builds:
     - isEnabled: 1
@@ -289,7 +289,7 @@ MonoBehaviour:
       needGoogleDrivePush: 0
   - isEnabled: 1
     editorName: Passby local release
-    itchGameLink: teamon/GameTemplate
+    itchGameLink: teamon/tree-of-eternity
     scriptingDefineSymbolsOverride: 
     builds:
     - isEnabled: 1
@@ -426,7 +426,7 @@ MonoBehaviour:
       needGoogleDrivePush: 0
   - isEnabled: 1
     editorName: Release
-    itchGameLink: teamon/GameTemplate
+    itchGameLink: teamon/tree-of-eternity
     scriptingDefineSymbolsOverride: 
     builds:
     - isEnabled: 1
@@ -563,7 +563,7 @@ MonoBehaviour:
       needGoogleDrivePush: 0
   - isEnabled: 1
     editorName: Release + zip
-    itchGameLink: teamon/GameTemplate
+    itchGameLink: teamon/tree-of-eternity
     scriptingDefineSymbolsOverride: 
     builds:
     - isEnabled: 1
@@ -700,7 +700,7 @@ MonoBehaviour:
       needGoogleDrivePush: 0
   - isEnabled: 1
     editorName: Release full
-    itchGameLink: teamon/GameTemplate
+    itchGameLink: teamon/tree-of-eternity
     scriptingDefineSymbolsOverride: 
     builds:
     - isEnabled: 1
@@ -836,13 +836,13 @@ MonoBehaviour:
       needSteamPush: 0
       needGoogleDrivePush: 0
   - isEnabled: 1
-    editorName: Testing win only
-    itchGameLink: teamon/GameTemplate
+    editorName: Testing only
+    itchGameLink: teamon/tree-of-eternity
     scriptingDefineSymbolsOverride: 
     builds:
     - isEnabled: 1
       outputRoot: Builds/
-      middlePath: $NAME_TEST/$NAME$EXECUTABLE
+      middlePath: $NAME_TEST_$PLATFORM/$NAME$EXECUTABLE
       isPassbyBuild: 0
       scriptingDefineSymbolsOverride: 
       targetGroup: 1
@@ -851,12 +851,34 @@ MonoBehaviour:
       isVirtualRealitySupported: 0
       isReleaseBuild: 0
       needZip: 1
-      compressDirPath: $NAME_TEST
-      needItchPush: 1
+      compressDirPath: $NAME_TEST_$PLATFORM
+      needItchPush: 0
       itchChannel: windows-testing
-      itchDirPath: $NAME_TEST
+      itchDirPath: $NAME_TEST_$PLATFORM
       itchAddLastChangelogUpdateNameToVerison: 1
       itchLastChangelogUpdateName: 0.1 - Write changelog in build window (CTRL+B)
+      useGithubActions: 0
+      useUnityActions: 0
+      needGamejolthPush: 0
+      needSteamPush: 0
+      needGoogleDrivePush: 0
+    - isEnabled: 1
+      outputRoot: Builds/
+      middlePath: $NAME_TEST_$PLATFORM/$NAME$EXECUTABLE
+      isPassbyBuild: 0
+      scriptingDefineSymbolsOverride: 
+      targetGroup: 1
+      target: 24
+      options: 0
+      isVirtualRealitySupported: 0
+      isReleaseBuild: 0
+      needZip: 1
+      compressDirPath: $NAME_TEST_$PLATFORM
+      needItchPush: 0
+      itchChannel: linux-universal
+      itchDirPath: $NAME_TEST_$PLATFORM
+      itchAddLastChangelogUpdateNameToVerison: 1
+      itchLastChangelogUpdateName: 
       useGithubActions: 0
       useUnityActions: 0
       needGamejolthPush: 0
