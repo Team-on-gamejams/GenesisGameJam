@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1483490468601632281}
   - component: {fileID: 1483490468601632280}
   m_Layer: 8
-  m_Name: Bullet
+  m_Name: BulletPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingLayerID: -2144735689
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4d57f7b553ef1dc45b5032ba5f22eb4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e5ae9011d6933c240b21e6b42d7e1d1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -168,12 +168,12 @@ SpriteRenderer:
   m_SortingLayerID: -706346595
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2d9793b5f85eafc4bb51fa821aaecc8a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59a7bea2dfab07d41b5f15747c2522f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.96, y: 2.29}
+  m_Size: {x: 1.05, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Intensity: 3
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 415933b045eb7ca39d01e6d50000000037ee2980
-  m_LightCookieSprite: {fileID: 21300000, guid: 2d9793b5f85eafc4bb51fa821aaecc8a,
+  m_LightCookieSprite: {fileID: 21300000, guid: 59a7bea2dfab07d41b5f15747c2522f4,
     type: 3}
   m_UseNormalMap: 1
   m_LightOrder: 0

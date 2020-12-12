@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1001
-  maxHP: 50
+  maxHP: 100
   canvas: {fileID: 1018021154967016450}
   barFirst: {fileID: 1018021154687886096}
   barSecond: {fileID: 1018021155204204009}
@@ -590,8 +590,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTargetEnemy: 0
   range: 3
-  attackTime: 1.5
-  bulletDamage: 5
+  attackTime: 1
+  bulletDamage: 10
   bulletSpeed: 10
   collider: {fileID: 1018021155159228392}
   bulletPrefab: {fileID: 1483490468601632287, guid: e87c82bdebbed2e4482c608c67ca681f,
