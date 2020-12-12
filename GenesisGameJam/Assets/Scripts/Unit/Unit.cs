@@ -8,6 +8,7 @@ public class Unit : MonoBehaviour {
 
 	[Header("Refs"), Space]
 	[SerializeField] SpriteRenderer arrowSr;
+	[SerializeField] Transform rendererParent;
 
 	Vector2 clickPos = Vector2.zero;
 
@@ -44,5 +45,16 @@ public class Unit : MonoBehaviour {
 		arrowSr.enabled = false;
 		GameManager.Instance.IsCanMoveCamereByClick = true;
 		clickPos = TemplateGameManager.Instance.Camera.ScreenToWorldPoint(Input.mousePosition).SetZ(0.0f);
+
+		Vector2 moveVector = clickPos - (Vector2)transform.position;
+
+		if ((moveVector.x < 0 && rendererParent.rotation.y != -180)) {
+			LeanTween.cancel(rendererParent.gameObject);
+			LeanTween.rotateY(rendererParent.gameObject, -180, 0.2f);
+		}
+		else if (moveVector.x > 0 && rendererParent.rotation.y != 0) {
+			LeanTween.cancel(rendererParent.gameObject);
+			LeanTween.rotateY(rendererParent.gameObject, 0, 0.2f);
+		}
 	}
 }
