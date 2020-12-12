@@ -28,7 +28,7 @@ public class ScaleUpDown : MonoBehaviour {
 			}
 		}
 
-		minL = 0.75f;//minScale - (maxScale - 1);
+		minL = 0.4f;//minScale - (maxScale - 1);
 		maxL = 1.0f;//minScale;
 	}
 
