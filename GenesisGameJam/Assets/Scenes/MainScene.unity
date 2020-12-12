@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 471920119}
   - component: {fileID: 471920118}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: MapBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3895,7 +3895,7 @@ GameObject:
   - component: {fileID: 1918385244}
   - component: {fileID: 1918385247}
   m_Layer: 8
-  m_Name: Tree
+  m_Name: MainTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

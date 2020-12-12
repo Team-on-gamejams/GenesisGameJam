@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class CameraMover : MonoBehaviour {
 	[SerializeField] CanvasScaler scaler;
+	[SerializeField] SpriteRenderer border;
 	[Space]
 	[SerializeField] float keyboardMapSensitivity = 1;
 	[SerializeField] float mouseMapSensitivity = 1;
@@ -42,10 +43,13 @@ public class CameraMover : MonoBehaviour {
 		else {
 			transform.position += (Vector3)lastMoveValueWASD * keyboardMapSensitivity * Time.deltaTime;
 		}
-	}
+
+		transform.position = new Vector3(Mathf.Clamp(transform.position.x, border.bounds.min.x, border.bounds.max.x), 
+			Mathf.Clamp(transform.position.y, border.bounds.min.y, border.bounds.max.y));
+}
 
 	public void OnMouseDrag(InputAction.CallbackContext context) {
-		if(isMouseDown)
+		if (isMouseDown)
 			lastMoveValueDrag = context.ReadValue<Vector2>();
 	}
 
