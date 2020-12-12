@@ -16,8 +16,6 @@ public class ResourceCreator : MonoBehaviour {
 	ShowRadialMenuOnClick selectionHandler;
 
 	const float showTime = 0.2f;
-	const float minMinutesToCollect = 1.0f;
-	const float minSecondsToCollect = minMinutesToCollect * 60.0f;
 
 	long lastCollectTicks;
 	float timeSinceLastCollectUnity = 0;
@@ -37,7 +35,7 @@ public class ResourceCreator : MonoBehaviour {
 
 	void Update() {
 		if (!isPopupShowed && (selectionHandler == null || !selectionHandler.isShowed)) {
-			if ((timeSinceLastCollectUnity += Time.deltaTime) > minSecondsToCollect) {
+			if ((timeSinceLastCollectUnity += Time.deltaTime) > GameManager.Instance.minSecondsToShowResourcePopup) {
 				ShowPopup();
 			}
 		}
@@ -109,6 +107,11 @@ public class ResourceCreator : MonoBehaviour {
 			int created = Mathf.Clamp(Mathf.FloorToInt((float)(gen.perMinute * minutesPassed)), 0, gen.max);
 			gen.textField.text = $"{created}/{gen.max}";
 		}
+	}
+
+	public void Chear_SkipSeconds(float seconds) {
+		lastCollectTicks -= Mathf.RoundToInt(seconds * TimeSpan.TicksPerSecond);
+		timeSinceLastCollectUnity += seconds;
 	}
 
 	[Serializable]

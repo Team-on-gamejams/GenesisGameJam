@@ -88,6 +88,10 @@ public class Health : MonoBehaviour {
 		return false;
 	}
 
+	public bool IsPlayer() {
+		return !IsEnemy();
+	}
+
 	public bool IsUnit() {
 		switch (type) {
 			case GeneralType.PlayerBuilding:

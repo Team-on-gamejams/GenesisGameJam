@@ -843,7 +843,7 @@ MonoBehaviour:
     - isEnabled: 1
       outputRoot: Builds/
       middlePath: $NAME_TEST/$NAME$EXECUTABLE
-      isPassbyBuild: 1
+      isPassbyBuild: 0
       scriptingDefineSymbolsOverride: 
       targetGroup: 1
       target: 5

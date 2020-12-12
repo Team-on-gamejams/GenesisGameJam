@@ -10,10 +10,30 @@ public class Unit : MonoBehaviour {
 	[SerializeField] SpriteRenderer arrowSr;
 	[SerializeField] Transform rendererParent;
 
+	[NaughtyAttributes.ReadOnly] public Health health;
+	[NaughtyAttributes.ReadOnly] public RangeAttacker rangeAttacker;
+	[NaughtyAttributes.ReadOnly] public ResourceCreator resourceCreator;
+
 	Vector2 clickPos = Vector2.zero;
 
 	private void Awake() {
 		arrowSr.enabled = false;
+
+		health = GetComponentInChildren<Health>();
+		rangeAttacker = GetComponentInChildren<RangeAttacker>();
+		resourceCreator = GetComponentInChildren<ResourceCreator>();
+	}
+
+	private void Start() {
+		if (health.IsPlayer()) {
+			GameManager.Instance.player.AddUnit(this);
+		}
+	}
+
+	private void OnDestroy() {
+		if (health.IsPlayer()) {
+			GameManager.Instance.player.RemoveUnit(this);
+		}
 	}
 
 	void Update() {

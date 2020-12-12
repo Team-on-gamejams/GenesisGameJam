@@ -11,8 +11,9 @@ using Random = UnityEngine.Random;
 
 [CreateAssetMenu(fileName = "GameManager", menuName = "Singletons/GameManager")]
 public class GameManager : Singleton<GameManager> {
-	[ReadOnly] public bool IsCanMoveCamereByClick = false;
+	public int minSecondsToShowResourcePopup = 60;
 
+	[ReadOnly] public bool IsCanMoveCamereByClick = false;
 	[ReadOnly] public Player player;
 
 	protected override void Initialize() {
