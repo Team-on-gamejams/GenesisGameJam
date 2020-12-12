@@ -57,15 +57,20 @@ public class ResourceUI : MonoBehaviour {
 					Vector3 startPos = meatgo.transform.position;
 					Vector3 startAngle = meatgo.transform.localEulerAngles;
 					float dist = (image.transform.position - startPos).magnitude;
+					int endedTweens = 0;
+					bool isLastLoop = pieaces == 0;
 
 					LeanTween.value(0, 1, dist / Screen.height * 0.8f)
 					.setDelay(0.1f * pieaces)
 					.setOnUpdate((float t) => {
 						meatgo.transform.position = Vector3.Lerp(startPos, image.transform.position, t);
 						meatgo.transform.localEulerAngles = Vector3.Lerp(startAngle, Vector3.zero, t);
+					})
+					.setOnComplete(() => {
+						OnFlyEnd();
 					});
 
-					bool isLastLoop = pieaces == 0;
+
 					LeanTween.value(1, 0, 0.2f)
 					.setDelay(0.1f * pieaces + dist / Screen.height * 0.64f)
 					.setOnStart(() => {
@@ -81,6 +86,14 @@ public class ResourceUI : MonoBehaviour {
 					})
 					.setEase(LeanTweenType.easeInCubic)
 					.setOnComplete(() => {
+						OnFlyEnd();
+					});
+
+					void OnFlyEnd() {
+						++endedTweens;
+						if (endedTweens != 2)
+							return;
+
 						if (delta >= 10) {
 							GameManager.Instance.player[type] += 10;
 							delta -= 10;
@@ -96,10 +109,11 @@ public class ResourceUI : MonoBehaviour {
 						}
 
 						Destroy(meatgo, Random.Range(0.1f, 1.0f));
-					});
+					}
 				});
 		}
 	}
+
 
 	void OnValueUpdated(ResourceType type, int newValue) {
 		if(this.type == type) {
