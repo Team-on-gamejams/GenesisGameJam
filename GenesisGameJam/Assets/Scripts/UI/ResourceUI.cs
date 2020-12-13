@@ -62,6 +62,10 @@ public class ResourceUI : MonoBehaviour {
 					int endedTweens = 0;
 					bool isLastLoop = pieaces == 0;
 
+					if (counteras == null) {
+						counteras = AudioManager.Instance.Play(counterSound);
+					}
+
 					LeanTween.value(0, 1, dist / Screen.height * 0.8f)
 					.setDelay(0.1f * pieaces)
 					.setOnUpdate((float t) => {
@@ -76,9 +80,7 @@ public class ResourceUI : MonoBehaviour {
 					LeanTween.value(1, 0, 0.2f)
 					.setDelay(0.1f * pieaces + dist / Screen.height * 0.64f)
 					.setOnStart(() => {
-						if (counteras == null) {
-							counteras = AudioManager.Instance.Play(counterSound, channel: AudioManager.AudioChannel.Sound);
-						}
+						
 					})
 					.setOnUpdate((float t) => {
 						c = img.color;

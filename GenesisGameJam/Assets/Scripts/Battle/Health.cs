@@ -10,6 +10,9 @@ public class Health : MonoBehaviour {
 	public int maxHP = 100;
 	public int currHP;
 
+	[Header("Audio"), Space]
+	[SerializeField] AudioClip onDie;
+
 	[Header("UI")]
 	[Space]
 	[SerializeField] Canvas canvas = null;
@@ -50,6 +53,8 @@ public class Health : MonoBehaviour {
 		currHP -= damage;
 
 		if (currHP <= 0) {
+			if (onDie)
+				AudioManager.Instance.Play(onDie);
 			Destroy(transform.parent.gameObject);
 			return;
 		}

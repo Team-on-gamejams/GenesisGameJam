@@ -25,6 +25,9 @@ public class Player : MonoBehaviour {
 	[SerializeField] int startWater = 100;
 	[SerializeField] GameObject startSetup;
 
+	[Header("Audio"), Space]
+	[SerializeField] AudioClip ambient;
+
 	[Header("Debug data"), Space]
 	[NaughtyAttributes.ReadOnly] [SerializeField] List<Building> buildings;
 	[NaughtyAttributes.ReadOnly] [SerializeField] List<Unit> units;
@@ -39,6 +42,8 @@ public class Player : MonoBehaviour {
 		if (isLoaded) {
 			Destroy(startSetup);
 		}
+
+		AudioManager.Instance.PlayMusic(ambient);
 
 		GameManager.Instance.player = this;
 	}

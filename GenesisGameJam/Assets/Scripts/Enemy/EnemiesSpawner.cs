@@ -16,7 +16,7 @@ public class EnemiesSpawner : MonoBehaviour {
 			return attackWarning.transform.position;
 		}
 		set {
-			if (AttackPos == Vector3.zero)
+			if (value == Vector3.zero)
 				return;
 			if (!attackWarning) {
 				long passedTicks = DateTime.Now.Ticks - lastAttackTicks;

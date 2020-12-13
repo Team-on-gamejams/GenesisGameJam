@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f582fb307f5e88499f3e2eb7ed7da9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onAttaack: {fileID: 8300000, guid: f669cd80ee578e346b44520de31295c2, type: 3}
   isTargetEnemy: 0
   range: 3
   attackTime: 1
@@ -198,6 +199,7 @@ MonoBehaviour:
   type: 1001
   maxHP: 100
   currHP: 0
+  onDie: {fileID: 8300000, guid: e2f649bf950b19f4db1141731d2ee906, type: 3}
   canvas: {fileID: 2554488266943415729}
   barFirst: {fileID: 2554488266128406867}
   barSecond: {fileID: 2554488266467830807}

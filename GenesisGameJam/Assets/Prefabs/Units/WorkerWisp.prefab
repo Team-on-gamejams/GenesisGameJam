@@ -971,6 +971,7 @@ MonoBehaviour:
   type: 11
   maxHP: 50
   currHP: 0
+  onDie: {fileID: 8300000, guid: e2f649bf950b19f4db1141731d2ee906, type: 3}
   canvas: {fileID: 747172437452886571}
   barFirst: {fileID: 747172438843584201}
   barSecond: {fileID: 747172437983017869}

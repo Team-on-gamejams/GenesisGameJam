@@ -4,6 +4,9 @@ using UnityEngine;
 
 [RequireComponent(typeof(CircleCollider2D))]
 public class RangeAttacker : MonoBehaviour {
+	[Header("Audio"), Space]
+	[SerializeField] AudioClip onAttaack;
+
 	[Header("Values"), Space]
 	[SerializeField] bool isTargetEnemy = false;
 	[Space]
@@ -52,6 +55,9 @@ public class RangeAttacker : MonoBehaviour {
 
 			if (inRange.Count >= 1) {
 				currAttackTime -= attackTime;
+
+				if (onAttaack)
+					AudioManager.Instance.Play(onAttaack, 0.5f);
 
 				GameObject bulletgo = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
 				Bullet b = bulletgo.GetComponent<Bullet>();

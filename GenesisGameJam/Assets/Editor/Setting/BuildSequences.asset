@@ -14,418 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequences:
   - isEnabled: 1
-    editorName: Testing
-    itchGameLink: teamon/tree-of-eternity
-    scriptingDefineSymbolsOverride: 
-    builds:
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/$NAME/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 5
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 0
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: windows-32
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/$NAME/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 19
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 0
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: windows-64
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/$NAME/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 24
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 0
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: linux-universal
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/$NAME/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 2
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 0
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: osx-universal
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 13
-      target: 20
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 0
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: webgl
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 7
-      target: 13
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 0
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: android
-      itchDirPath: $NAME_$PLATFORM$EXECUTABLE
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-  - isEnabled: 1
-    editorName: Testing + zip
-    itchGameLink: teamon/tree-of-eternity
-    scriptingDefineSymbolsOverride: 
-    builds:
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/$NAME/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 5
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 1
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: windows-32
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/$NAME/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 19
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 1
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: windows-64
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/$NAME/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 24
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 1
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: linux-universal
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/$NAME/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 2
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 1
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: osx-universal
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM/
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 13
-      target: 20
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 1
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: webgl
-      itchDirPath: $NAME_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/
-      middlePath: $NAME_$PLATFORM$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 7
-      target: 13
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 0
-      needZip: 1
-      compressDirPath: $NAME_$PLATFORM
-      needItchPush: 0
-      itchChannel: android
-      itchDirPath: $NAME_$PLATFORM$EXECUTABLE
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-  - isEnabled: 1
-    editorName: Passby local release
-    itchGameLink: teamon/tree-of-eternity
-    scriptingDefineSymbolsOverride: 
-    builds:
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
-      isPassbyBuild: 1
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 5
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 1
-      itchChannel: windows-32
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
-      isPassbyBuild: 1
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 19
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 1
-      itchChannel: windows-64
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
-      isPassbyBuild: 1
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 24
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 1
-      itchChannel: linux-universal
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
-      isPassbyBuild: 1
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 2
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 1
-      itchChannel: osx-universal
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/
-      isPassbyBuild: 1
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 13
-      target: 20
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 1
-      itchChannel: webgl
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
-      isPassbyBuild: 1
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 7
-      target: 13
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 1
-      itchChannel: android
-      itchDirPath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-  - isEnabled: 1
-    editorName: Release
+    editorName: Jam release
     itchGameLink: teamon/tree-of-eternity
     scriptingDefineSymbolsOverride: 
     builds:
@@ -438,8 +27,8 @@ MonoBehaviour:
       target: 5
       options: 0
       isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 0
+      isReleaseBuild: 0
+      needZip: 1
       compressDirPath: $NAME_$VERSION_$PLATFORM
       needItchPush: 0
       itchChannel: windows-32
@@ -460,8 +49,8 @@ MonoBehaviour:
       target: 19
       options: 0
       isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 0
+      isReleaseBuild: 0
+      needZip: 1
       compressDirPath: $NAME_$VERSION_$PLATFORM
       needItchPush: 0
       itchChannel: windows-64
@@ -482,8 +71,8 @@ MonoBehaviour:
       target: 24
       options: 0
       isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 0
+      isReleaseBuild: 0
+      needZip: 1
       compressDirPath: $NAME_$VERSION_$PLATFORM
       needItchPush: 0
       itchChannel: linux-universal
@@ -504,33 +93,11 @@ MonoBehaviour:
       target: 2
       options: 0
       isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 0
+      isReleaseBuild: 0
+      needZip: 1
       compressDirPath: $NAME_$VERSION_$PLATFORM
       needItchPush: 0
       itchChannel: osx-universal
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 13
-      target: 20
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 0
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 0
-      itchChannel: webgl
       itchDirPath: $NAME_$VERSION_$PLATFORM
       itchAddLastChangelogUpdateNameToVerison: 1
       itchLastChangelogUpdateName: 
@@ -548,144 +115,7 @@ MonoBehaviour:
       target: 13
       options: 0
       isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 0
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 0
-      itchChannel: android
-      itchDirPath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-  - isEnabled: 1
-    editorName: Release + zip
-    itchGameLink: teamon/tree-of-eternity
-    scriptingDefineSymbolsOverride: 
-    builds:
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 5
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 0
-      itchChannel: windows-32
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 19
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 0
-      itchChannel: windows-64
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 24
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 0
-      itchChannel: linux-universal
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 1
-      target: 2
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 0
-      itchChannel: osx-universal
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM/
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 13
-      target: 20
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
-      needZip: 1
-      compressDirPath: $NAME_$VERSION_$PLATFORM
-      needItchPush: 0
-      itchChannel: webgl
-      itchDirPath: $NAME_$VERSION_$PLATFORM
-      itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
-      useGithubActions: 0
-      useUnityActions: 0
-      needGamejolthPush: 0
-      needSteamPush: 0
-      needGoogleDrivePush: 0
-    - isEnabled: 1
-      outputRoot: Builds/Releases/
-      middlePath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
-      isPassbyBuild: 0
-      scriptingDefineSymbolsOverride: 
-      targetGroup: 7
-      target: 13
-      options: 0
-      isVirtualRealitySupported: 0
-      isReleaseBuild: 1
+      isReleaseBuild: 0
       needZip: 1
       compressDirPath: $NAME_$VERSION_$PLATFORM
       needItchPush: 0
@@ -830,6 +260,143 @@ MonoBehaviour:
       itchDirPath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
       itchAddLastChangelogUpdateNameToVerison: 1
       itchLastChangelogUpdateName: 0.1 - Jam version
+      useGithubActions: 0
+      useUnityActions: 0
+      needGamejolthPush: 0
+      needSteamPush: 0
+      needGoogleDrivePush: 0
+  - isEnabled: 1
+    editorName: Passby local release
+    itchGameLink: teamon/tree-of-eternity
+    scriptingDefineSymbolsOverride: 
+    builds:
+    - isEnabled: 1
+      outputRoot: Builds/Releases/
+      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
+      isPassbyBuild: 1
+      scriptingDefineSymbolsOverride: 
+      targetGroup: 1
+      target: 5
+      options: 0
+      isVirtualRealitySupported: 0
+      isReleaseBuild: 1
+      needZip: 1
+      compressDirPath: $NAME_$VERSION_$PLATFORM
+      needItchPush: 1
+      itchChannel: windows-32
+      itchDirPath: $NAME_$VERSION_$PLATFORM
+      itchAddLastChangelogUpdateNameToVerison: 1
+      itchLastChangelogUpdateName: 
+      useGithubActions: 0
+      useUnityActions: 0
+      needGamejolthPush: 0
+      needSteamPush: 0
+      needGoogleDrivePush: 0
+    - isEnabled: 1
+      outputRoot: Builds/Releases/
+      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
+      isPassbyBuild: 1
+      scriptingDefineSymbolsOverride: 
+      targetGroup: 1
+      target: 19
+      options: 0
+      isVirtualRealitySupported: 0
+      isReleaseBuild: 1
+      needZip: 1
+      compressDirPath: $NAME_$VERSION_$PLATFORM
+      needItchPush: 1
+      itchChannel: windows-64
+      itchDirPath: $NAME_$VERSION_$PLATFORM
+      itchAddLastChangelogUpdateNameToVerison: 1
+      itchLastChangelogUpdateName: 
+      useGithubActions: 0
+      useUnityActions: 0
+      needGamejolthPush: 0
+      needSteamPush: 0
+      needGoogleDrivePush: 0
+    - isEnabled: 1
+      outputRoot: Builds/Releases/
+      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
+      isPassbyBuild: 1
+      scriptingDefineSymbolsOverride: 
+      targetGroup: 1
+      target: 24
+      options: 0
+      isVirtualRealitySupported: 0
+      isReleaseBuild: 1
+      needZip: 1
+      compressDirPath: $NAME_$VERSION_$PLATFORM
+      needItchPush: 1
+      itchChannel: linux-universal
+      itchDirPath: $NAME_$VERSION_$PLATFORM
+      itchAddLastChangelogUpdateNameToVerison: 1
+      itchLastChangelogUpdateName: 
+      useGithubActions: 0
+      useUnityActions: 0
+      needGamejolthPush: 0
+      needSteamPush: 0
+      needGoogleDrivePush: 0
+    - isEnabled: 1
+      outputRoot: Builds/Releases/
+      middlePath: $NAME_$VERSION_$PLATFORM/$NAME_$VERSION/$NAME$EXECUTABLE
+      isPassbyBuild: 1
+      scriptingDefineSymbolsOverride: 
+      targetGroup: 1
+      target: 2
+      options: 0
+      isVirtualRealitySupported: 0
+      isReleaseBuild: 1
+      needZip: 1
+      compressDirPath: $NAME_$VERSION_$PLATFORM
+      needItchPush: 1
+      itchChannel: osx-universal
+      itchDirPath: $NAME_$VERSION_$PLATFORM
+      itchAddLastChangelogUpdateNameToVerison: 1
+      itchLastChangelogUpdateName: 
+      useGithubActions: 0
+      useUnityActions: 0
+      needGamejolthPush: 0
+      needSteamPush: 0
+      needGoogleDrivePush: 0
+    - isEnabled: 1
+      outputRoot: Builds/Releases/
+      middlePath: $NAME_$VERSION_$PLATFORM/
+      isPassbyBuild: 1
+      scriptingDefineSymbolsOverride: 
+      targetGroup: 13
+      target: 20
+      options: 0
+      isVirtualRealitySupported: 0
+      isReleaseBuild: 1
+      needZip: 1
+      compressDirPath: $NAME_$VERSION_$PLATFORM
+      needItchPush: 1
+      itchChannel: webgl
+      itchDirPath: $NAME_$VERSION_$PLATFORM
+      itchAddLastChangelogUpdateNameToVerison: 1
+      itchLastChangelogUpdateName: 
+      useGithubActions: 0
+      useUnityActions: 0
+      needGamejolthPush: 0
+      needSteamPush: 0
+      needGoogleDrivePush: 0
+    - isEnabled: 1
+      outputRoot: Builds/Releases/
+      middlePath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
+      isPassbyBuild: 1
+      scriptingDefineSymbolsOverride: 
+      targetGroup: 7
+      target: 13
+      options: 0
+      isVirtualRealitySupported: 0
+      isReleaseBuild: 1
+      needZip: 1
+      compressDirPath: $NAME_$VERSION_$PLATFORM
+      needItchPush: 1
+      itchChannel: android
+      itchDirPath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
+      itchAddLastChangelogUpdateNameToVerison: 1
+      itchLastChangelogUpdateName: 
       useGithubActions: 0
       useUnityActions: 0
       needGamejolthPush: 0
