@@ -22,18 +22,6 @@ public class EnemyAI : MonoBehaviour {
 		speed *= Random.Range(0.8f, 1.2f);
 	}
 
-	private void Start() {
-		if (health.IsPlayer()) {
-			GameManager.Instance.enemiesSpawner.AddUnit(this);
-		}
-	}
-
-	private void OnDestroy() {
-		if (health.IsPlayer()) {
-			GameManager.Instance.enemiesSpawner.RemoveUnit(this);
-		}
-	}
-
 	void Update() {
 		if (movePos != Vector2.zero) {
 			Vector2 moveVector = movePos - (Vector2)transform.position;

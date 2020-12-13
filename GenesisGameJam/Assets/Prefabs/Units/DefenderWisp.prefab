@@ -513,6 +513,7 @@ MonoBehaviour:
   minScale: 1
   maxScale: 1.1
   maxTime: 2
+  startFromRandom: 1
 --- !u!1 &8909497650174116516
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb84d00643016f4d8e2c9740b66e253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 11
+  type: 12
   maxHP: 100
   canvas: {fileID: 8909497652017951141}
   barFirst: {fileID: 8909497650627775815}
@@ -955,7 +956,6 @@ MonoBehaviour:
   rendererParent: {fileID: 6924272743655810340}
   health: {fileID: 0}
   rangeAttacker: {fileID: 0}
-  resourceCreator: {fileID: 0}
 --- !u!61 &8909497651180327378
 BoxCollider2D:
   m_ObjectHideFlags: 0

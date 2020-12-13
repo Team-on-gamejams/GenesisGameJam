@@ -17,8 +17,8 @@ public class ResourceCreator : MonoBehaviour {
 
 	const float showTime = 0.2f;
 
-	long lastCollectTicks;
-	float timeSinceLastCollectUnity = 0;
+	public long lastCollectTicks;
+	public float timeSinceLastCollectUnity = 0;
 
 	bool isPopupShowed = false;
 

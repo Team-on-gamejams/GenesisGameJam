@@ -14,6 +14,7 @@ public class GameManager : Singleton<GameManager> {
 	public int minSecondsToShowResourcePopup = 60;
 
 	[ReadOnly] public bool IsCanMoveCamereByClick = false;
+	[ReadOnly] public SaveSpawner saveSpawner;
 	[ReadOnly] public Player player;
 	[ReadOnly] public EnemiesSpawner enemiesSpawner;
 	[ReadOnly] public ArrowsNavigation arrows;

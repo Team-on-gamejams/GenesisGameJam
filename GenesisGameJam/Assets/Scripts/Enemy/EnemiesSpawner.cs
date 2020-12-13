@@ -7,7 +7,27 @@ public class EnemiesSpawner : MonoBehaviour {
 	[SerializeField] Vector2 enemiesPerTree = new Vector2(1, 2);
 	[SerializeField] float secondsBetweenAttacks = 600;
 	[SerializeField] float secondsToShowWarning = 60;
-	long lastAttackTicks;
+	[NonSerialized] public long lastAttackTicks = 0;
+	public Vector3 AttackPos{
+		get{
+			if (!attackWarning) {
+				return Vector3.zero;
+			}
+			return attackWarning.transform.position;
+		}
+		set {
+			if (!attackWarning) {
+				long passedTicks = DateTime.Now.Ticks - lastAttackTicks;
+				secondsPassed = new TimeSpan(passedTicks).TotalSeconds;
+				if (!isAttackWarningShowed && secondsPassed >= secondsToShowWarning) {
+					ShowAttackWarning();
+				}
+			}
+
+			if (attackWarning)
+				attackWarning.transform.position = value;
+		}
+	}
 
 	[Header("Refs"), Space]
 	[SerializeField] SpriteRenderer mapBorder;
@@ -24,7 +44,8 @@ public class EnemiesSpawner : MonoBehaviour {
 
 		GameManager.Instance.enemiesSpawner = this;
 
-		lastAttackTicks = DateTime.Now.Ticks;
+		if(lastAttackTicks == 0)
+			lastAttackTicks = DateTime.Now.Ticks;
 	}
 
 	private void Update() {
@@ -50,6 +71,8 @@ public class EnemiesSpawner : MonoBehaviour {
 			ShowAttackWarning();
 		}
 	}
+
+	
 
 	public void AddUnit(EnemyAI unit) {
 		aliveEnemies.Add(unit);
@@ -87,6 +110,22 @@ public class EnemiesSpawner : MonoBehaviour {
 
 		GameManager.Instance.arrows.RemoveArrow(attackWarning.transform);
 		Destroy(attackWarning);
+	}
+
+	public void LoadUnits(UnitSaveData[] units) {
+		foreach (var u in units) {
+			GameManager.Instance.saveSpawner.Spawn(u);
+		}
+	}
+
+	public UnitSaveData[] SaveUnits() {
+		List<UnitSaveData> units = new List<UnitSaveData>();
+
+		foreach (EnemyAI ai in FindObjectsOfType<EnemyAI>()) {
+			units.Add(new UnitSaveData(ai.health.type, ai.transform.position, ai.health.currHP));
+		}
+
+		return units.ToArray();
 	}
 
 	public void Chear_SkipSeconds(float seconds) {

@@ -6,9 +6,9 @@ using TMPro;
 
 public class Health : MonoBehaviour {
 	[Header("Values"), Space]
-	[SerializeField] GeneralType type = GeneralType.None;
-	[SerializeField] int maxHP = 100;
-	int currHP;
+	public GeneralType type = GeneralType.None;
+	public int maxHP = 100;
+	public int currHP;
 
 	[Header("UI")]
 	[Space]
@@ -34,6 +34,16 @@ public class Health : MonoBehaviour {
 			hpTextField.text = $"{Mathf.RoundToInt(currHP)}/{Mathf.RoundToInt(maxHP)}";
 
 		canvas.gameObject.SetActive(false);
+	}
+
+	public void SetCurrHealth(int val) {
+		barSecond.value = barFirst.value = currHP = val;
+		if (hpTextField != null)
+			hpTextField.text = $"{Mathf.RoundToInt(currHP)}/{Mathf.RoundToInt(maxHP)}";
+
+		if (!canvas.gameObject.activeSelf) {
+			canvas.gameObject.SetActive(true);
+		}
 	}
 
 	public void GetDamage(int damage) {
@@ -77,7 +87,9 @@ public class Health : MonoBehaviour {
 	public bool IsEnemy() {
 		switch (type) {
 			case GeneralType.PlayerBuilding:
-			case GeneralType.PlayerUnit:
+			case GeneralType.PlayerAdditionalTree:
+			case GeneralType.PlayerUnitWorker:
+			case GeneralType.PlayerUnitDefender:
 				return false;
 
 			case GeneralType.EnemyBuilding:
@@ -94,11 +106,13 @@ public class Health : MonoBehaviour {
 
 	public bool IsUnit() {
 		switch (type) {
+			case GeneralType.PlayerAdditionalTree:
 			case GeneralType.PlayerBuilding:
 			case GeneralType.EnemyBuilding:
 				return false;
 
-			case GeneralType.PlayerUnit:
+			case GeneralType.PlayerUnitWorker:
+			case GeneralType.PlayerUnitDefender:
 			case GeneralType.EnemyUnit:
 				return true;
 		}

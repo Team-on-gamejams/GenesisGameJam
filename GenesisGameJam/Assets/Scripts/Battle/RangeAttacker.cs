@@ -43,7 +43,14 @@ public class RangeAttacker : MonoBehaviour {
 
 	private void Update() {
 		if(currAttackTime >= attackTime) {
-			if(inRange.Count >= 1) {
+			for (int i = 0; i < inRange.Count; ++i) {
+				if (inRange[i] == null) {
+					inRange.RemoveAt(i);
+					--i;
+				}
+			}
+
+			if (inRange.Count >= 1) {
 				currAttackTime -= attackTime;
 
 				GameObject bulletgo = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
@@ -63,7 +70,7 @@ public class RangeAttacker : MonoBehaviour {
 		if(inRange.Count == 1) {
 			return inRange[0];
 		}
-
+	
 		int nearestUnit = -1;
 		int nearestBuilding = -1;
 		float nearestUnitDist = -1;
