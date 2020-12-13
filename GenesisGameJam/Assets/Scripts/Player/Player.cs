@@ -49,6 +49,12 @@ public class Player : MonoBehaviour {
 			this[ResourceType.Sunlight] = startSunlight;
 			this[ResourceType.Water] = startWater;
 		}
+		else {
+			this[ResourceType.Time] = this[ResourceType.Time];
+			this[ResourceType.Sunlight] = this[ResourceType.Sunlight];
+			this[ResourceType.Water] = this[ResourceType.Water];
+
+		}
 
 		GameManager.Instance.IsCanMoveCamereByClick = true;
 
