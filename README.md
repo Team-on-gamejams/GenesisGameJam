@@ -13,7 +13,7 @@ Available in [Windows, OSX, Linux and Android](https://teamon.itch.io/tree-of-et
 # Team 
  * Team-on [itch](https://teamon.itch.io/) [github](https://github.com/Team-on) - Unity developer
  * webandrover [itch](https://webandrover.itch.io/) - game designer
- * ainarts [artstation](https://www.artstation.com/ainarts) - 2d/UI artist
+ * ainarts [itch](https://itch.io/profile/dimmetrion) [artstation](https://www.artstation.com/ainarts) - 2d/UI artist
  * Oleg Kabanov - analytics
  
 # Used assets:
