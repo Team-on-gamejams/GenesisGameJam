@@ -1,6 +1,12 @@
 # [Tree of eternity](https://teamon.itch.io/tree-of-eternity)  
-Mobile RTS-idler
+Mobile RTS-idler.Protect your tree from waves of enemies  
+
 Made for [Genesis Game Jam](https://genesisgamedevweek.com/jam) in 48 hours. Theme: THEME  
+
+# How to play
+ * WASD or drag - camera move
+ * Drag units to move
+ * Click on tree to collect resources
 
 # Downloads and Links
 Available in [Windows, OSX, Linux and Android](https://teamon.itch.io/tree-of-eternity). If you encounter any problem, please leave a issue! 
@@ -20,6 +26,6 @@ Available in [Windows, OSX, Linux and Android](https://teamon.itch.io/tree-of-et
  * [Radial Menu Framework](https://assetstore.unity.com/packages/tools/gui/radial-menu-framework-50601) - radial menus
 
 # Screenshots
-![Screen1](Screenshots/1.jpg)
-![Screen2](Screenshots/2.jpg)
-![Screen3](Screenshots/3.jpg)
+![Screen1](Screenshots/1.jpg)  
+![Screen2](Screenshots/2.jpg)  
+![Screen3](Screenshots/3.jpg)  
