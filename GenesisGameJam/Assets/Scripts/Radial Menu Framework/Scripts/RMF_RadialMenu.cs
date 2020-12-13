@@ -28,6 +28,10 @@ public class RMF_RadialMenu : MonoBehaviour {
 
 	[Tooltip("This is the text object that will display the labels of the radial elements when they are being hovered over. If you don't want a label, leave this blank.")]
 	public TextMeshProUGUI textLabel;
+	public TextMeshProUGUI priceSunField;
+	public TextMeshProUGUI priceWaterField;
+	public GameObject sunParent;
+	public GameObject waterParent;
 
 	[Tooltip("This is the list of radial menu elements. This is order-dependent. The first element in the list will be the first element created, and so on.")]
 	public List<RMF_RadialMenuElement> elements = new List<RMF_RadialMenuElement>();
@@ -120,7 +124,14 @@ public class RMF_RadialMenu : MonoBehaviour {
 				if (elements[index] != null) {
 					selectButton(index);
 					if (isCanSelect && (Input.GetMouseButtonUp(0) || Input.GetButtonDown("Submit"))) {
-						ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
+						if ((elements[index].priceSun <= GameManager.Instance.player[ResourceType.Sunlight]) &&
+							(elements[index].priceWater <= GameManager.Instance.player[ResourceType.Water])) {
+
+							ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
+							GameManager.Instance.player[ResourceType.Sunlight] -= elements[index].priceSun;
+							GameManager.Instance.player[ResourceType.Water] -= elements[index].priceWater;
+						}
+
 
 						selectionFollowerImage.color = selectionFollowerImage.color.SetA(0);
 						elements[index].unHighlightThisElement(pointer);
@@ -135,6 +146,11 @@ public class RMF_RadialMenu : MonoBehaviour {
 					}
 				}
 				textLabel.text = "";
+				priceSunField.text = "";
+				priceWaterField.text = "";
+
+				sunParent.SetActive(false);
+				waterParent.SetActive(false);
 			}
 		}
 
