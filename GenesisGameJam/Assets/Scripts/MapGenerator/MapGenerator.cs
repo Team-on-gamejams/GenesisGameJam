@@ -128,7 +128,7 @@ public class MapGenerator : MonoBehaviour {
 		do {
 			vector = new Vector2(Random.Range(mapBorders.bounds.min.x, mapBorders.bounds.max.x),
 							   Random.Range(mapBorders.bounds.min.y, mapBorders.bounds.max.y));
-		} while (Mathf.Abs(vector.x) <= 4 && Mathf.Abs(vector.y) <= 4);
+		} while (Mathf.Abs(vector.x) <= 7 && Mathf.Abs(vector.y) <= 7);
 
 		return vector;
 	}
