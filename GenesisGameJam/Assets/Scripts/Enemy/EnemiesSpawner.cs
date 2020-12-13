@@ -17,6 +17,7 @@ public class EnemiesSpawner : MonoBehaviour {
 
 	[NaughtyAttributes.ReadOnly] [SerializeField] List<EnemyAI> aliveEnemies;
 	bool isAttackWarningShowed = false;
+	double secondsPassed;
 
 	private void Awake() {
 		aliveEnemies = new List<EnemyAI>(16);
@@ -28,7 +29,7 @@ public class EnemiesSpawner : MonoBehaviour {
 
 	private void Update() {
 		long passedTicks = DateTime.Now.Ticks - lastAttackTicks;
-		double secondsPassed = new TimeSpan(passedTicks).TotalSeconds;
+		secondsPassed = new TimeSpan(passedTicks).TotalSeconds;
 
 		if(secondsPassed >= secondsBetweenAttacks) {
 			lastAttackTicks = DateTime.Now.Ticks;
@@ -70,6 +71,13 @@ public class EnemiesSpawner : MonoBehaviour {
 			Quaternion.identity,
 			transform
 		);
+
+		GameManager.Instance.arrows.AddArrow(attackWarning.transform, 1.0f, ()=> {
+			float timeLeft = (float)(secondsBetweenAttacks - secondsPassed);
+			if (timeLeft < 0)
+				timeLeft = 0;
+			return ((int)(timeLeft) / 60).ToString() + "." + (Mathf.RoundToInt(timeLeft) % 60).ToString("00");
+		});
 	}
 
 	public void HideAttackWarning() {
@@ -77,6 +85,7 @@ public class EnemiesSpawner : MonoBehaviour {
 			return;
 		isAttackWarningShowed = false;
 
+		GameManager.Instance.arrows.RemoveArrow(attackWarning.transform);
 		Destroy(attackWarning);
 	}
 

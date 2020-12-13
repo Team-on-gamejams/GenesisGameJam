@@ -6,6 +6,7 @@ public class ScaleUpDown : MonoBehaviour {
 	[SerializeField] float minScale = 0.75f;
 	[SerializeField] float maxScale = 1.0f;
 	[SerializeField] float maxTime = 0.5f;
+	[SerializeField] bool startFromRandom = true;
 
 	Light2D light;
 	float minL;
@@ -31,8 +32,10 @@ public class ScaleUpDown : MonoBehaviour {
 		minL = 0.4f;//minScale - (maxScale - 1);
 		maxL = 1.0f;//minScale;
 
-		currTime = Random.Range(0, maxTime);
-		isIncreaseScale = Random.Range(0, 2) == 1;
+		if (startFromRandom) {
+			currTime = Random.Range(0, maxTime);
+			isIncreaseScale = Random.Range(0, 2) == 1;
+		}
 	}
 
 	void OnEnable() {

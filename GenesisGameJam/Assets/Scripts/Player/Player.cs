@@ -120,6 +120,7 @@ public class Player : MonoBehaviour {
 		}
 
 		GameManager.Instance.enemiesSpawner.Chear_SkipSeconds(skippedSeconds);
+		GameManager.Instance.arrows.Cheat_SkipTime(skippedSeconds);
 	}
 
 	public void Cheat_RestartGameClear() {

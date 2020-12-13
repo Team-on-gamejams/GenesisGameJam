@@ -16,6 +16,7 @@ public class GameManager : Singleton<GameManager> {
 	[ReadOnly] public bool IsCanMoveCamereByClick = false;
 	[ReadOnly] public Player player;
 	[ReadOnly] public EnemiesSpawner enemiesSpawner;
+	[ReadOnly] public ArrowsNavigation arrows;
 
 	protected override void Initialize() {
 		Debug.Log("GameManager.Initialize()");

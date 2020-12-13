@@ -82,6 +82,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3732080641772373889}
   - component: {fileID: 3732080641772373888}
+  - component: {fileID: 3397781978731418348}
+  - component: {fileID: 8902022967044831057}
   m_Layer: 0
   m_Name: AttackMarker
   m_TagString: Untagged
@@ -155,3 +157,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3397781978731418348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3732080641772373891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d97f5624c05a04e87cd9dc7efe3f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minScale: 0.9
+  maxScale: 1
+  maxTime: 1
+  startFromRandom: 0
+--- !u!114 &8902022967044831057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3732080641772373891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85c430d2d4388f44aa0be454093ebd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startFromRandom: 0
+  minAlpha: 0.5
+  maxAlpha: 1
+  maxTime: 1
