@@ -149,7 +149,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &2554488265313522988
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1001
   maxHP: 100
+  currHP: 0
   canvas: {fileID: 2554488266943415729}
   barFirst: {fileID: 2554488266128406867}
   barSecond: {fileID: 2554488266467830807}
@@ -1061,7 +1062,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &5825965183625472240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1119,6 +1120,7 @@ MonoBehaviour:
   minScale: 1
   maxScale: 1.1
   maxTime: 2
+  startFromRandom: 1
 --- !u!1 &3983129970635425574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,7 +1309,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &9153570818531031535
 GameObject:
   m_ObjectHideFlags: 0

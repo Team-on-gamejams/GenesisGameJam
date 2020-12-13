@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &8787891367516667754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +142,7 @@ MonoBehaviour:
   minScale: 1
   maxScale: 1.1
   maxTime: 2
+  startFromRandom: 1
 --- !u!1 &747172437452886569
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +564,6 @@ MonoBehaviour:
   rendererParent: {fileID: 1291808415141938858}
   health: {fileID: 0}
   rangeAttacker: {fileID: 0}
-  resourceCreator: {fileID: 0}
 --- !u!61 &747172438288413276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -767,7 +767,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &747172438545368084
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,6 +970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 11
   maxHP: 50
+  currHP: 0
   canvas: {fileID: 747172437452886571}
   barFirst: {fileID: 747172438843584201}
   barSecond: {fileID: 747172437983017869}

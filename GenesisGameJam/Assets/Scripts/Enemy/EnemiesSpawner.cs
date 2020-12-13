@@ -16,6 +16,8 @@ public class EnemiesSpawner : MonoBehaviour {
 			return attackWarning.transform.position;
 		}
 		set {
+			if (AttackPos == Vector3.zero)
+				return;
 			if (!attackWarning) {
 				long passedTicks = DateTime.Now.Ticks - lastAttackTicks;
 				secondsPassed = new TimeSpan(passedTicks).TotalSeconds;
@@ -88,9 +90,8 @@ public class EnemiesSpawner : MonoBehaviour {
 		isAttackWarningShowed = true;
 
 		attackWarning = Instantiate(
-			attackWarningPrefab, 
-			new Vector3(UnityEngine.Random.Range(mapBorder.bounds.min.x, mapBorder.bounds.max.x),
-						UnityEngine.Random.Range(mapBorder.bounds.min.y, mapBorder.bounds.max.y)), 
+			attackWarningPrefab,
+			GetRandomPos(), 
 			Quaternion.identity,
 			transform
 		);
@@ -126,6 +127,17 @@ public class EnemiesSpawner : MonoBehaviour {
 		}
 
 		return units.ToArray();
+	}
+
+	Vector2 GetRandomPos() {
+		Vector2 vector;
+
+		do {
+			vector = new Vector2(UnityEngine.Random.Range(mapBorder.bounds.min.x, mapBorder.bounds.max.x),
+							   UnityEngine.Random.Range(mapBorder.bounds.min.y, mapBorder.bounds.max.y));
+		} while (Mathf.Abs(vector.x) <= 10 && Mathf.Abs(vector.y) <= 10);
+
+		return vector;
 	}
 
 	public void Chear_SkipSeconds(float seconds) {

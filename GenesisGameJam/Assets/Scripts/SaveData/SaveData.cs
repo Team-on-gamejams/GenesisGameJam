@@ -18,6 +18,7 @@ public class SaveData {
 	public UnitSaveData[] units;
 	public BuildingSaveData[] buildings;
 	public UnitSaveData[] enemies;
+	public MapSaveData[] map;
 
 	public bool IsExist() {
 		return PlayerPrefs.HasKey(playerPrefsKey);
@@ -63,5 +64,20 @@ public class BuildingSaveData : UnitSaveData {
 
 	public BuildingSaveData(GeneralType type, Vector3 position, int health, long lastCollect) : base(type, position, health) {
 		this.lastCollect = lastCollect;
+	}
+}
+
+[Serializable]
+public class MapSaveData {
+	public MapGenerator.PropsType type;
+	public Vector3 position;
+
+	public MapSaveData() {
+
+	}
+
+	public MapSaveData(MapGenerator.PropsType type, Vector3 position) {
+		this.type = type;
+		this.position = position;
 	}
 }

@@ -17,6 +17,7 @@ public class GameManager : Singleton<GameManager> {
 	[ReadOnly] public SaveSpawner saveSpawner;
 	[ReadOnly] public Player player;
 	[ReadOnly] public EnemiesSpawner enemiesSpawner;
+	[ReadOnly] public MapGenerator mapGenerator;
 	[ReadOnly] public ArrowsNavigation arrows;
 
 	protected override void Initialize() {

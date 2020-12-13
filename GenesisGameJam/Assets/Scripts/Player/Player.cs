@@ -139,6 +139,7 @@ public class Player : MonoBehaviour {
 		GameManager.Instance.enemiesSpawner.lastAttackTicks = data.lastAttackTime;
 		GameManager.Instance.enemiesSpawner.AttackPos = data.lastAttackPos;
 		GameManager.Instance.enemiesSpawner.LoadUnits(data.enemies);
+		GameManager.Instance.mapGenerator.Load(data.map);
 
 		this[ResourceType.Time] = data.playerTime;
 		this[ResourceType.Sunlight] = data.playerSun;
@@ -161,6 +162,7 @@ public class Player : MonoBehaviour {
 		data.lastAttackTime = GameManager.Instance.enemiesSpawner.lastAttackTicks;
 		data.lastAttackPos = GameManager.Instance.enemiesSpawner.AttackPos;
 		data.enemies = GameManager.Instance.enemiesSpawner.SaveUnits();
+		data.map = GameManager.Instance.mapGenerator.Save();
 
 		data.playerTime = this[ResourceType.Time];
 		data.playerSun = this[ResourceType.Sunlight];
