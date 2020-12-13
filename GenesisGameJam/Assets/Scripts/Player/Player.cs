@@ -191,6 +191,8 @@ public class Player : MonoBehaviour {
 	}
 
 	public void Cheat_RestartGameClear() {
+		PlayerPrefs.DeleteAll();
+		PlayerPrefs.Save();
 		Scene scene = SceneManager.GetActiveScene();
 		SceneManager.LoadScene(scene.name);
 	}

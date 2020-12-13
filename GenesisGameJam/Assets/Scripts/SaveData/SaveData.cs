@@ -5,7 +5,8 @@ using UnityEngine;
 
 [Serializable]
 public class SaveData {
-	const string playerPrefsKey = "asf";
+	const string playerPrefsKey = "whosyourdaddy";
+	const string passPhrase = "there is no spoon";
 
 	public long lastAttackTime;
 	public Vector3 lastAttackPos;
@@ -26,14 +27,13 @@ public class SaveData {
 		string json = PlayerPrefs.GetString(playerPrefsKey);
 
 
-		return JsonUtility.FromJson<SaveData>(json);
+		return JsonUtility.FromJson<SaveData>(StringCipher.Decrypt(json, passPhrase));
 	}
 
 	public void Write() {
 		string json = JsonUtility.ToJson(this, true);
 
-		Debug.Log(json);
-		PlayerPrefs.SetString(playerPrefsKey, json);
+		PlayerPrefs.SetString(playerPrefsKey, StringCipher.Encrypt(json, passPhrase));
 		PlayerPrefs.Save();
 	}
 }
