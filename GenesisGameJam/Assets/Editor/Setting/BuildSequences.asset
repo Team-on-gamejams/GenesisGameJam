@@ -719,7 +719,7 @@ MonoBehaviour:
       itchChannel: windows-32
       itchDirPath: $NAME_$VERSION_$PLATFORM
       itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
+      itchLastChangelogUpdateName: 0.1 - Jam version
       useGithubActions: 0
       useUnityActions: 0
       needGamejolthPush: 0
@@ -741,7 +741,7 @@ MonoBehaviour:
       itchChannel: windows-64
       itchDirPath: $NAME_$VERSION_$PLATFORM
       itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
+      itchLastChangelogUpdateName: 0.1 - Jam version
       useGithubActions: 0
       useUnityActions: 0
       needGamejolthPush: 0
@@ -763,7 +763,7 @@ MonoBehaviour:
       itchChannel: linux-universal
       itchDirPath: $NAME_$VERSION_$PLATFORM
       itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
+      itchLastChangelogUpdateName: 0.1 - Jam version
       useGithubActions: 0
       useUnityActions: 0
       needGamejolthPush: 0
@@ -785,7 +785,7 @@ MonoBehaviour:
       itchChannel: osx-universal
       itchDirPath: $NAME_$VERSION_$PLATFORM
       itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
+      itchLastChangelogUpdateName: 0.1 - Jam version
       useGithubActions: 0
       useUnityActions: 0
       needGamejolthPush: 0
@@ -807,7 +807,7 @@ MonoBehaviour:
       itchChannel: webgl
       itchDirPath: $NAME_$VERSION_$PLATFORM
       itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
+      itchLastChangelogUpdateName: 0.1 - Jam version
       useGithubActions: 0
       useUnityActions: 0
       needGamejolthPush: 0
@@ -829,7 +829,7 @@ MonoBehaviour:
       itchChannel: android
       itchDirPath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
       itchAddLastChangelogUpdateNameToVerison: 1
-      itchLastChangelogUpdateName: 
+      itchLastChangelogUpdateName: 0.1 - Jam version
       useGithubActions: 0
       useUnityActions: 0
       needGamejolthPush: 0
@@ -877,6 +877,55 @@ MonoBehaviour:
       needItchPush: 0
       itchChannel: linux-universal
       itchDirPath: $NAME_TEST_$PLATFORM
+      itchAddLastChangelogUpdateNameToVerison: 1
+      itchLastChangelogUpdateName: 
+      useGithubActions: 0
+      useUnityActions: 0
+      needGamejolthPush: 0
+      needSteamPush: 0
+      needGoogleDrivePush: 0
+  - isEnabled: 1
+    editorName: Release full
+    itchGameLink: teamon/Tree_of_eternity
+    scriptingDefineSymbolsOverride: 
+    builds:
+    - isEnabled: 1
+      outputRoot: Builds/Releases/
+      middlePath: $NAME_$VERSION_$PLATFORM/
+      isPassbyBuild: 0
+      scriptingDefineSymbolsOverride: 
+      targetGroup: 13
+      target: 20
+      options: 0
+      isVirtualRealitySupported: 0
+      isReleaseBuild: 1
+      needZip: 1
+      compressDirPath: $NAME_$VERSION_$PLATFORM
+      needItchPush: 1
+      itchChannel: webgl
+      itchDirPath: $NAME_$VERSION_$PLATFORM
+      itchAddLastChangelogUpdateNameToVerison: 1
+      itchLastChangelogUpdateName: 
+      useGithubActions: 0
+      useUnityActions: 0
+      needGamejolthPush: 0
+      needSteamPush: 0
+      needGoogleDrivePush: 0
+    - isEnabled: 1
+      outputRoot: Builds/Releases/
+      middlePath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
+      isPassbyBuild: 0
+      scriptingDefineSymbolsOverride: 
+      targetGroup: 7
+      target: 13
+      options: 0
+      isVirtualRealitySupported: 0
+      isReleaseBuild: 1
+      needZip: 1
+      compressDirPath: $NAME_$VERSION_$PLATFORM
+      needItchPush: 1
+      itchChannel: android
+      itchDirPath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
       itchAddLastChangelogUpdateNameToVerison: 1
       itchLastChangelogUpdateName: 
       useGithubActions: 0
