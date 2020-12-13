@@ -1,12 +1,9 @@
-# [Game name](link)  
-Short description
+# [Tree of eternity](https://teamon.itch.io/tree-of-eternity)  
+Mobile RTS-idler
 Made for [Genesis Game Jam](https://genesisgamedevweek.com/jam) in 48 hours. Theme: THEME  
 
 # Downloads and Links
-Available in [Windows, OSX, Linux and WebGL](link). If you encounter any problem, please leave a issue! 
-
-# How to play:
- * 
+Available in [Windows, OSX, Linux and Android](https://teamon.itch.io/tree-of-eternity). If you encounter any problem, please leave a issue! 
  
 # How to open project:
  * Download _Unity 2020.1.15_
@@ -16,7 +13,8 @@ Available in [Windows, OSX, Linux and WebGL](link). If you encounter any problem
 # Team 
  * Team-on [itch](https://teamon.itch.io/) [github](https://github.com/Team-on) - Unity developer
  * webandrover [itch](https://webandrover.itch.io/) - game designer
- * ainarts [itch](link) [artstation](https://www.artstation.com/ainarts) - 2d/UI artist
+ * ainarts [artstation](https://www.artstation.com/ainarts) - 2d/UI artist
+ * Oleg Kabanov - analytics
  
 # Used assets:
  * [Radial Menu Framework](https://assetstore.unity.com/packages/tools/gui/radial-menu-framework-50601) - radial menus
