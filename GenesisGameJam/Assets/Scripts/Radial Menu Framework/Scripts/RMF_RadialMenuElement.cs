@@ -125,12 +125,12 @@ public class RMF_RadialMenuElement : MonoBehaviour {
 			if (priceSun > GameManager.Instance.player[ResourceType.Sunlight])
 				parentRM.priceSunField.color = Color.red;
 			else
-				parentRM.priceSunField.color = Color.black;
+				parentRM.priceSunField.color = Color.white;
 
 			if (priceWater > GameManager.Instance.player[ResourceType.Water])
 				parentRM.priceWaterField.color = Color.red;
 			else
-				parentRM.priceWaterField.color = Color.black;
+				parentRM.priceWaterField.color = Color.white;
 		}
 	}
 
