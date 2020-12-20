@@ -3,6 +3,8 @@ Mobile RTS-idler.Protect your tree from waves of enemies
 
 Made for [Genesis Game Jam](https://genesisgamedevweek.com/jam) in 48 hours. Theme: THEME  
 
+![Cover](Screenshots/TreeOfEternity.png)  
+
 # How to play
  * WASD or drag - camera move
  * Drag units to move
